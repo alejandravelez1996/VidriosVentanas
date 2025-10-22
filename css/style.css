@@ -5,7 +5,6 @@
 .card-img{
     height: 450px;
     filter: brightness(60%);
- 
 }
 
 .hijoc{
@@ -59,7 +58,7 @@ p{
 
 
 #grupo {
-    
+    /* border: 1px solid black;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px;
@@ -67,13 +66,11 @@ p{
     overflow: hidden;
     background-position: center center;
     position: relative;
-     margin-right: 50px;  
-      margin-left: 0;
- 
 }
 
 
 #grupoa {
+    /* border: 1px solid black;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,6 +117,7 @@ p{
     width: 850px;
     height: 300px;
     margin: auto;
+   /* border: 1px solid black;*/
 }
 
 .hijob {
@@ -538,11 +536,18 @@ p{
 .container-fluid{
   background-color: #a2b1c4;
 }
+
+.navbar {
+  background-color: #a2b1c4 !important; /* Color del fondo */
+  height: 100px; /* 🔹 Aumenta la altura total de la barra */
+  padding: 20px 0; /* 🔹 Añade espacio vertical */
+}
+
 .contenedor {
   display: flex;
   align-items: center; /* Centra verticalmente */
-  justify-content: space-between; /* Espacio entre texto e imagen */
-  gap: 20px; 
+  justify-content: space-between; 
+  gap: 30px; 
 }
 
 .texto {
@@ -553,28 +558,30 @@ p{
 .ima{
   height: 100px;
   width: 200px; 
-  border-radius: 10px; 
-}
-.img-personalizada {
-     width: 900px;         
-    
-}
-.card {
-    border: none;       
+  border-radius: 10px;
 }
 
-.contenedor-flex {
-    display: flex;             
-    align-items: center;        
-    gap: 30px;                  
-    justify-content: center; 
-    flex-wrap: wrap;           
+form.d-flex {
+  justify-content: center;
+  width: 100%;
 }
 
-.imagen-redonda {
-    width: 450px;
-    height: 300px;
-    border-radius: 20%;       
-    object-fit: cover;          
+form.d-flex .form-control {
+  width: 600px;   /* ancho de la barra */
+  height: 45px;
+  font-size: 18px;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.navbar i {
+  color: black;
+  font-size: 25px;
 }
 
